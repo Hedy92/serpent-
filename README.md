@@ -42,8 +42,8 @@ from urllib import request,parse
 						listpdf=regexpdf.findall(htmlpdf)			
 					
 						for urld in listpdf: #目标:下载每个项目里的文件，因无下载选项，采用打印时另存为PDF
+							url='http://www.cpppc.org:8082/efmisweb'+urld+'&content=efmisweb&xsg=:8083/'
 							browser=webdriver.Chrome() #启动chrome
-								url='http://www.cpppc.org:8082/efmisweb'+urld+'&content=efmisweb&xsg=:8083/'
 							browser.get(url)
 							actions=ActionChains(browser)
 							iframe=browser.find_element_by_xpath('/html/body/iframe') #先定位到iframe，否则find无法识别
