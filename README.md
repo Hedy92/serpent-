@@ -1,15 +1,13 @@
 # serpent-
 codes that improve efficiency 
-
-Python3
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.action_chains import ActionChains
-import csv,re,time
-from urllib import request,parse
+	from selenium import webdriver
+	from selenium.webdriver.common.keys import Keys
+	from selenium.webdriver.common.action_chains import ActionChains
+	import csv,re,time
+	from urllib import request,parse
 
 
 	with open('/Users/apple/Downloads/keyword.csv','r',encoding='gbk') as csvfile: 
